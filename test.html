@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        #qr-code {
+            margin: 20px 0;
+        }
+        .contador {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para a melhor pessoa desse mundo ❤️</h1>
+        <p>Você é a melhor coisa que aconteceu na minha vida. Eu te amo muito! 💖</p>
+        
+        <img src="/Imagem do WhatsApp de 2025-02-11 à(s) 12.43.23_519ca6e6.jpg" alt="Foto da minha namorada">
+        
+        <div id="qr-code">
+            <img src="/Imagem do WhatsApp de 2025-02-11 à(s) 12.43.24_b70db85a.jpg" alt="QR Code da nossa história">
+        </div>
+
+        <div id="qr-code">
+          <img src="/Imagem do WhatsApp de 2025-02-11 à(s) 12.43.24_cb589b25.jpg" alt="QR Code da nossa história">
+      </div>
+        
+        <div class="contador" id="contador"></div>
+    </div>
+
+    <script>
+  function atualizarContador() {
+            const dataInicio = new Date('2022-03-25T00:00:00'); // Ajuste a data de início do relacionamento
+            const agora = new Date();
+            const diff = agora - dataInicio;
+
+            const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutos = Math.floor((diff / (1000 * 60)) % 60);
+            const segundos = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('contador').innerText = `Estamos juntos há: ${dias} dias, ${horas}h ${minutos}m ${segundos}s 💖`;
+        }
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+    </script>
+</body>
+</html>
